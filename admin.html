@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin - Kopi Sidikalang</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container" style="padding-top:2rem">
+    <h2>Admin — Tambah Produk</h2>
+    <form id="productForm">
+      <div>
+        <label>Nama Produk</label><br>
+        <input type="text" id="name" required style="width:100%" />
+      </div>
+      <div>
+        <label>Gambar (opsional)</label><br>
+        <input type="file" id="image" accept="image/*" />
+      </div>
+      <div>
+        <label>Video (opsional, mp4)</label><br>
+        <input type="file" id="video" accept="video/*" />
+      </div>
+      <div>
+        <label>Deskripsi</label><br>
+        <textarea id="desc" rows="4" style="width:100%"></textarea>
+      </div>
+      <div>
+        <label>Story (singkat)</label><br>
+        <textarea id="story" rows="3" style="width:100%"></textarea>
+      </div>
+      <div style="margin-top:.5rem">
+        <button class="btn primary" type="submit">Simpan Produk</button>
+        <a href="index.html" class="btn outline">Kembali</a>
+      </div>
+    </form>
+    <div id="status" style="margin-top:1rem;color:rgb(2, 128, 0)"></div>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>

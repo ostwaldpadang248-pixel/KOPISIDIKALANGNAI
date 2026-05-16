@@ -1,0 +1,84 @@
+:root{
+  --brown:#4b2e2a;
+  --dark:#130f0d;
+  --deep:#1f1813;
+  --gold:#cba135;
+  --cream:#f4efe9;
+  --light:#d9c9b9;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;color:var(--cream);background:var(--dark)}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+.site-header{background:rgba(15,10,7,0.95);color:var(--cream);position:sticky;top:0;z-index:20;backdrop-filter:blur(10px)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:1rem}
+.brand{font-family:Georgia, 'Times New Roman', serif;margin:0;font-size:1.4rem;letter-spacing:.04em}
+nav a{color:var(--cream);margin-left:1rem;text-decoration:none;font-size:.95rem}
+.btn{display:inline-block;padding:.75rem 1.3rem;border-radius:999px;text-decoration:none;font-weight:600;transition:transform .2s ease,background .2s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--gold);color:var(--dark)}
+.btn.outline{border:1px solid rgba(244,239,233,.5);color:var(--cream);background:transparent}
+
+.hero{position:relative;height:70vh;min-height:420px;display:flex;align-items:center;color:var(--cream);overflow:hidden}
+.hero-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.45)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,.25),rgba(11,11,11,.75))}
+.hero-content{position:relative;z-index:2;padding:2rem;max-width:720px}
+.hero-tag{display:inline-block;margin-bottom:1rem;padding:.4rem .9rem;border:1px solid rgba(255,255,255,.3);border-radius:999px;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em;color:var(--light)}
+.hero-content h2{font-family:Georgia, serif;font-size:2.75rem;line-height:1.05;margin:0 0 .8rem}
+.hero-content p{max-width:38rem;font-size:1.05rem;line-height:1.8;color:var(--light)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.5rem}
+
+.section{padding:4rem 0;border-bottom:1px solid rgba(244,239,233,.08)}
+.section h3{font-family:Georgia, serif;font-size:2rem;margin-bottom:1.2rem;color:var(--cream)}
+.section p{color:var(--light);line-height:1.8}
+.features .feature-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;list-style:none;padding:0}
+.features .feature-list li{background:rgba(255,255,255,.05);padding:1rem 1.1rem;border-radius:16px;border:1px solid rgba(255,255,255,.06)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem}
+.product-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:18px;box-shadow:0 18px 40px rgba(0,0,0,.18);overflow:hidden;backdrop-filter:blur(3px)}
+.product-media{width:100%;height:240px;object-fit:cover;background:#2a1d18}
+.product-body{padding:1.2rem}
+.product-body h4{margin:.25rem 0;color:var(--cream)}
+.product-body p, .product-body small{color:var(--light)}
+.product-body small{display:block;margin-top:.75rem;font-size:.95rem;line-height:1.75}
+
+.testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.testimonial-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);padding:1.5rem;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.testimonial-card p{margin:0 0 1rem;color:var(--light);line-height:1.9}
+.testimonial-card span{color:var(--gold);font-weight:700;font-size:.95rem}
+
+.products-bg{background:url('uploads/TAMPAK ATAS.jpeg') center/cover no-repeat;position:relative}
+.products-bg::before{content:'';position:absolute;inset:0;background:rgba(17,11,8,.82)}
+.products-bg .container{position:relative;z-index:1}
+.products .grid{position:relative;z-index:1}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.gallery-grid img,
+.gallery-grid video{width:100%;height:260px;object-fit:cover;border-radius:18px;border:1px solid rgba(255,255,255,.08);box-shadow:0 16px 36px rgba(0,0,0,.18)}
+.gallery-grid video{background:#000}
+
+.ready-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.ready-list div{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);padding:1.4rem;border-radius:18px;box-shadow:0 10px 26px rgba(0,0,0,.12)}
+.ready-list h4{margin:.5rem 0;color:var(--cream)}
+.ready-list p{color:var(--light)}
+
+.order-panel{position:relative;overflow:hidden;border-radius:26px;background:url('https://images.unsplash.com/photo-1484883151533-4ec2feb196a2?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat}
+.order-panel::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,11,11,.55),rgba(75,46,42,.55))}
+.order-content{position:relative;z-index:1;padding:3rem 1.5rem;max-width:700px}
+.order-content h3{margin-bottom:.8rem;color:var(--cream)}
+.order-content p{color:var(--light);font-size:1.05rem;line-height:1.8}
+.order-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.5rem}
+
+.cta{background:rgba(255,255,255,.03);text-align:center;border-radius:24px;padding:2.5rem 1rem}
+.cta p{color:var(--light);margin-top:.5rem}
+
+.site-footer{padding:1.25rem 0;text-align:center;background:rgba(255,255,255,.03);color:var(--light)}
+
+@media (max-width:900px){
+  .hero-content h2{font-size:2rem}
+  .container{padding:1rem}
+}
+
+@media (max-width:700px){
+  .hero{height:auto;min-height:320px;padding:3rem 0}
+  .hero-content h2{font-size:1.8rem}
+  .hero{align-items:flex-end}
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "robusta",
+    "name": "Robusta Sidikalang",
+    "description": "Karakter rasa kuat dan bold. Aroma khas dan seimbang. Cocok untuk pecinta kopi hitam.",
+    "story": "Robusta Sidikalang tumbuh subur di perbukitan dan diproses secara tradisional oleh petani lokal, menghasilkan rasa kuat yang autentik.",
+    "image": "uploads/BATANG KOPI.jpeg",
+    "video": "",
+    "createdAt": 1620000000000
+  },
+  {
+    "id": "arabika",
+    "name": "Arabika Sidikalang",
+    "description": "Rasa coklat. Aftertaste seperti black tea. Lebih smooth tapi tetap kompleks.",
+    "story": "Arabika Sidikalang melewati proses panjang dan penuh tantangan, namun menghasilkan rasa elegan yang cocok untuk penikmat kopi premium.",
+    "image": "uploads/BERBUAH KOPI.jpeg",
+    "video": "",
+    "createdAt": 1620000010000
+  }
+]
